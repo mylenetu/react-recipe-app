@@ -1,0 +1,22 @@
+import React, { Component } from 'react';
+import Recipe from './Recipe';
+import Navbar from './Navbar';
+import RecipeList from './RecipeList';
+import './RecipeApp.css';
+import { findByLabelText } from '@testing-library/react';
+
+
+class RecipeApp extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Navbar/>
+        <RecipeList/>
+      </div>
+      );
+    }
+  }
+
+  
+  export default RecipeApp;
+  
